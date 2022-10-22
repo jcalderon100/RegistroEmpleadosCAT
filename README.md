@@ -20,7 +20,7 @@ https://jcalderon100.github.io/RegistroEmpleadosCAT/
 
 
 ## Screenshots
-![App Screenshot](https://raw.githubusercontent.com/jcalderon100/Ecoclimas/main/images/Ecoclimas%20page.jpg)
+![App Screenshot](https://github.com/jcalderon100/RegistroEmpleadosCAT/blob/main/imagenes/Screenshot%20Readme.png)
 
 
 ## 🛠 Skills

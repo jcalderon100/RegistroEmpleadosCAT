@@ -134,17 +134,26 @@ table{
 }
 
 tr:nth-child(even),table.mainTable thead>tr{
-    background-color: #dddddd;
+    background-color: #ffffff;
     border-color: black;
+    color: #fff;
+    
 }
 
 table.mainTable tbody>tr:nth-child(odd){
-    background-color: rgb(255, 0, 0);
+    background-color: black;
 }
 
-td,th{
+th{
     border: 2px solid #dddddd;
     padding: 10px;
+    color: #000000;
+}
+
+td{
+    color: #FFCC00;
+    padding: 10px;
+
 }
 
 
@@ -181,6 +190,8 @@ a{
     text-decoration: underline;
     cursor: pointer;
 }
+
+/*aviso*/
 
 .classValidate{
     color: red;
@@ -325,44 +336,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
+      
+
    
-    .projects{
-        
-        margin-top: 200px;
-        margin-bottom: 0;
-        position: static;
-        
-    }
-
-    .product-item{
-        position: relative;
-    }    
-    
-    .projects__grid{
-        grid-template-areas: 
-        "img1"
-        "img2"
-        "img3";
-        height: auto;
-        grid-template-rows: repeat(3, 250px);
-        grid-auto-rows: 250px;
-        gap: 10px;
-    }
-
-    .product-grid-container{
-        display: grid;
-        gap: 1rem;
-        
-        
-    }
-
-    .product-grid-container{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        width: auto;
-
-    }
 
     
     /*footer*/
@@ -388,14 +364,7 @@ footer{
         padding-bottom: 0;
     }
 
-    .footer-menus{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        border-bottom: 1px solid #2A2A2A;
-    }
-
+    
     .footer-menus .footer-content-container:nth-of-type(1){
         width: 45%;
         align-items: flex-start;
