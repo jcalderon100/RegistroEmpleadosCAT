@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>REGISTRO DE EMPLEADOS CAT</title>
+</head>
+<body>
+
+<!--Footer-->
+    <header class="header">
+        <img src="./imagenes/logo.jpg" alt="" class="logo">
+
+<!--Menu header-->
+        <ul class="main-menu">
+            <li><a href="#" class="menu-item">NOSOTROS</a></li>
+            <li><a href="#" class="menu-item">RECLUTAMIENTO</a></li>
+            <li><a href="#" class="menu-item">EVALUACION</a></li>
+            <li><a href="#" class="cta">INGRESAR</a></li>
+            <li><a href="#" class="cta">REGISTRO EMPLEADOS</a></li>                       
+        </ul>
+        
+    </header>
+
+    <section class="module" >
+        <div class="text_div">
+            <h2 class="text_title"> MODULO DE REGISTRO DE EMPLEADOS </h2>
+            <p> Ingresar informacion por trabajador en relacion a la documentacion requerida previamente</p>
+        </div>
+    </section>
+
+<!--formulario de registro-->
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onSubmitForm();">
+                    <div>
+                        <label>Nombre</label><label class="classValidate hide" id="labelId" >*Este campo es necesario</label>
+                        <input type="text" name="Nombre" id="Nombre">
+                    </div>
+                    <div>
+                        <label>Apellido</label>
+                        <input type="text" name="Apellido" id="Apellido">
+                    </div>
+                    <div>
+                        <label>Puesto</label>
+                        <input type="text" name="Puesto" id="Puesto">
+                    </div>
+                    <div>
+                        <label>Departamento</label>
+                        <input type="text" name="Departamento" id="Departamento">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="AGREGAR">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <!--Tabla de pintado de datos-->
+                <table class="mainTable" id="employeeList">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Puesto</th>
+                        <th>Departamento</th>
+                        <th></th>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+<!--Footer-->
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content-container">
+            <h3 class="website-logo">SOPORTE</h3>
+            <span class="footer-info">(813)-376096 - (813)-376097</span>
+            <span class="footer-info">soporte@caterpillar.com</span>
+        </div>
+        <div class="footer-menus">
+            <div class="footer-content-container">
+                <span class="menu-title"></span>
+            </div>
+         </div>
+        
+        <div class="footer-content-container">
+            <div class="social-container">
+                <img class="social-link" src="./imagenes/fabrica.svg" alt="">
+                <img class="social-link" src="./imagenes/workers.svg" alt="">
+                <img class="social-link" src="./imagenes/worker2.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright-container">
+        <span class="copyright">Copyright 2022, www.caterpillar.com, todos los derechos reservados.</span>
+    </div>
+</footer>
+    <script src="./app.js"></script>
+</body>
+</html>
