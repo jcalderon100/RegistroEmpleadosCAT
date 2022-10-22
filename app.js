@@ -18,8 +18,7 @@ function onSubmitForm(){
         }
         resetForm();
     }
-    
- 
+     
 }
 
 // Funcion leer el contenido en el formulario //    
