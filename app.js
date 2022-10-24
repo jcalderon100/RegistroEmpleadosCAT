@@ -80,7 +80,7 @@ function editForm(a){
 }
 function updateRecord(formData){
     selectRow.cells[0].innerHTML = formData.Nombre;
-    selectRow.cells[1].innerHTML = formData.Apelido;
+    selectRow.cells[1].innerHTML = formData.Apellido;
     selectRow.cells[2].innerHTML = formData.Puesto;
     selectRow.cells[3].innerHTML = formData.Departamento;
     employees.splice(selectRow.rowIndex-1,1,{Nombre:formData.Nombre,Apellido:formData.Apellido,Puesto:formData.Puesto,Departamento:formData.Departamento});
