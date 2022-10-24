@@ -25,7 +25,7 @@ function onSubmitForm(){
 
 function readForm(){
     var formData = {};
-    formData["Nompre"] = document.getElementById("Nombre").value;
+    formData["Nombre"] = document.getElementById("Nombre").value;
     formData["Apellido"] = document.getElementById("Apellido").value;
     formData["Puesto"] = document.getElementById("Puesto").value;
     formData["Departamento"] = document.getElementById("Departamento").value;
