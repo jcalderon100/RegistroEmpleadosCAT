@@ -1,6 +1,6 @@
 
 body{
-    background: rgb(158, 158, 158);
+    background: rgb(255, 255, 255);
     height: 145vh;
     width: 100%;
     position: absolute;
@@ -13,8 +13,8 @@ body{
 
 
 body>table{
-    width: 90%;
-    border-spacing: 20px;
+    width: 100%;
+    border-spacing: 30px;
     
 }
  
@@ -23,7 +23,7 @@ body>table{
 .header{
     height: auto;
     width: 100%;
-    position: static; 
+    position: sticky;
     top: 0;
     left: 0;
     display: flex;
@@ -102,6 +102,7 @@ body>table{
     display: flex;
     align-items: center;
     position: static;
+    transition: .8s;
 
 }
 
@@ -117,7 +118,6 @@ body>table{
     align-content: center;
     font-weight: 500;
     margin-left: 30px;
-    
 }
 
 /* FORMULARIO*/
@@ -125,18 +125,19 @@ body>table{
 table{
     padding-top: 50px;
     margin-bottom: 400px;
+    
 }
 
 .mainTable{
     width: 100%;
-    border-radius: 3px;
-    border-color: #000000;
+        
 }
 
 tr:nth-child(even),table.mainTable thead>tr{
     background-color: #ffffff;
     border-color: black;
     color: #fff;
+    
     
 }
 
@@ -148,11 +149,18 @@ th{
     border: 2px solid #dddddd;
     padding: 10px;
     color: #000000;
+    border-color: #000000;
+    border-style:solid;
+    border-radius: 5px;
+    
 }
 
 td{
     color: #FFCC00;
     padding: 10px;
+    border-color: #000000;
+    border-style: groove;
+    border-radius: 5px;
 
 }
 
@@ -164,7 +172,7 @@ input[type=text],input[type=number]{
     margin-bottom:30px;
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 /* boton agregar */ 
@@ -178,6 +186,7 @@ input[type=submit]{
     border: none;
     border-radius: 8px;
     transition: .5s;
+    cursor: pointer;
 }
 .button{
     text-align: center;
@@ -314,16 +323,31 @@ footer{
 
 /*MEDIA QUERY*/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
 
     .header{
+        display: flex;
         flex-direction: column;
-        position: relative;
-        
-        
     }
+
+
+    table{
+        display: flex;
+        padding-top: 50px;
+        margin-bottom: 400px;
+    }
+
+    .module{
+        padding-top: 0;
+        margin-top: 150px;
+        margin-bottom: auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-align: center;
     
-   
+    }
+       
     .main-menu{
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -331,10 +355,24 @@ footer{
         display: flex;
         flex-direction: column;      
     }
+    
     .cta{
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
+    }
+
+    table{
+        padding-top: 50px;
+        margin-bottom: 400px;
+        
+    }
+   
+    
+    td{
+        display: flex;
+        flex-direction: column;
+    
     }
       
 
