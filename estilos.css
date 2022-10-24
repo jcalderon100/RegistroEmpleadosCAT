@@ -130,19 +130,24 @@ table{
 
 .mainTable{
     width: 100%;
+    padding: 0;
         
 }
 
-tr:nth-child(even),table.mainTable thead>tr{
-    background-color: #ffffff;
+/* celdas titulos */
+
+tr:nth-child(even),table.mainTable thead>tr{   /*celda fija*/
+    background-color: white;
     border-color: black;
-    color: #fff;
+    text-transform: uppercase;
+    
     
     
 }
 
 table.mainTable tbody>tr:nth-child(odd){
-    background-color: black;
+    background-color: white;
+    text-transform: uppercase;
 }
 
 th{
@@ -156,8 +161,9 @@ th{
 }
 
 td{
-    color: #FFCC00;
+    color: black;
     padding: 10px;
+    margin-top: 0;
     border-color: #000000;
     border-style: groove;
     border-radius: 5px;
@@ -166,13 +172,14 @@ td{
 
 
 /* imput formulario */
-input[type=text],input[type=number]{
+input[type=text]{
     width: 100%;
     padding: 15px;
     margin-bottom:30px;
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
+    text-transform: uppercase;
 }
 
 /* boton agregar */ 
@@ -194,7 +201,7 @@ input[type=submit]{
 
 
 a{
-    color: rgb(0, 255, 64);
+    color:blue;
     margin-left: 15px;
     text-decoration: underline;
     cursor: pointer;
@@ -328,13 +335,15 @@ footer{
     .header{
         display: flex;
         flex-direction: column;
+        position: relative;
+        width: 100%;
+        
     }
 
 
     table{
         display: flex;
-        padding-top: 50px;
-        margin-bottom: 400px;
+        
     }
 
     .module{
@@ -345,36 +354,67 @@ footer{
         align-items: center;
         position: relative;
         text-align: center;
-    
+        width: 100%;
+            
     }
        
     .main-menu{
         flex-wrap: wrap;
-        justify-content: space-evenly;
         margin-top: 0;
         display: flex;
-        flex-direction: column;      
+        flex-direction: column;  
+
     }
     
     .cta{
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
+
     }
 
-    table{
-        padding-top: 50px;
-        margin-bottom: 400px;
-        
-    }
-   
+       
     
     td{
-        display: flex;
-        flex-direction: column;
+        display: flex;       
+        font-size: 80%;
     
     }
-      
+
+    th{
+        background-color: #ffffff;
+        
+        
+    }
+    
+    .mainTable{
+        display:grid;
+        grid-row:auto;
+       
+        
+                
+    }
+
+    table.mainTable tbody>tr:nth-child(odd){
+        background-color: rgb(255, 255, 255);
+        width: min-content;
+        display: flex;
+        flex-direction: row;
+        font-size: 55%;
+        
+    }
+
+    tr:nth-child(even),table.mainTable thead>tr{
+        width: min-content;
+        background-color: #ffffff;
+        height: min-content;
+        flex-direction: row;
+        display: flex;
+        padding: 0;
+        font-size: 55%;     
+
+    }
+    
 
    
 
@@ -382,24 +422,26 @@ footer{
     /*footer*/
     
     .footer-container{
-        padding: 2rem;
+        padding: 0;
         flex-direction: column;
+        width: 110%;
+        margin-right: 0;
     }
 
     .footer-content-container{
         width: 100%;
-        padding: 2rem 0;
-        border-bottom: 1px solid #2A2A2A;
+        padding:0;
+        border-bottom: 1px solid #646464;
         justify-content: center;
         align-items: center;
     }
 
     .footer-content-container:nth-of-type(1){
-        align-items: flex-start;
+        align-items:center;
     }
     .footer-content-container:nth-of-type(3){
         border-bottom: none;
-        padding-bottom: 0;
+        padding-bottom: 10px;
     }
 
     

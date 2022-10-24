@@ -27,7 +27,7 @@
     <section class="module" >
         <div class="text_div">
             <h2 class="text_title"> MODULO DE REGISTRO DE EMPLEADOS </h2>
-            <p> Ingresar informacion por trabajador en relacion a la documentacion requerida previamente</p>
+            <p> Ingresar informacion por trabajador en relacion a la documentacion entregada previamente</p>
         </div>
     </section>
 
@@ -38,19 +38,19 @@
             <td>
                 <form onsubmit="event.preventDefault();onSubmitForm();">
                     <div>
-                        <label>Nombre</label><label class="classValidate hide" id="labelId" >*Este campo es necesario</label>
+                        <label>NOMBRE</label><label class="classValidate hide" id="labelId" >*Este campo es necesario</label>
                         <input type="text" name="Nombre" id="Nombre">
                     </div>
                     <div>
-                        <label>Apellido</label>
+                        <label>APELLIDO</label>
                         <input type="text" name="Apellido" id="Apellido">
                     </div>
                     <div>
-                        <label>Puesto</label>
+                        <label>CARGO</label>
                         <input type="text" name="Puesto" id="Puesto">
                     </div>
                     <div>
-                        <label>Departamento</label>
+                        <label>DEPARTAMENTO</label>
                         <input type="text" name="Departamento" id="Departamento">
                     </div>
                     <div class="button">
@@ -62,13 +62,13 @@
 <!--Tabla de pintado de datos-->
                 <table class="mainTable" id="employeeList">
                     <thead>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Puesto</th>
-                        <th>Departamento</th>
-                        <th>Acciones</th>
-                        
+                        <th>NOMBRE</th>
+                        <th>APELLIDO</th>
+                        <th>CARGO</th>
+                        <th>DEPARTAMENTO</th>
+                        <th>ACCIONES</th>                       
                     </thead>
+                    <!--Registro Almacenado-->
                     <tbody id="tbody">
 
                     </tbody>

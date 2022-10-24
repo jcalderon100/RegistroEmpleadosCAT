@@ -119,7 +119,7 @@ function updateAfterPageRefresh(){
                 <td>${Apellido}</td>
                 <td>${Puesto}</td>
                 <td>${Departamento}</td>
-                <td><a onClick=editForm(this)>EDITAR</a><a onClick=deleteRecord(this)>DELETE</a></td>
+                <td><a onClick=editForm(this)>EDITAR</a><a onClick=deleteRecord(this)>BORRAR</a></td>
             </tr>
             `
             
