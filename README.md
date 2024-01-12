@@ -1,4 +1,4 @@
-# Modulo de Registro de Empleados CAT - Local Storage
+# Modulo de Registro de Empleados CRUD - Local Storage JS
 
 El Proyecto 2 - tiene como proposito la creacion de un plataforma web que incluya HTML, CSS y el uso del lenguaje de programacion Javascript, esto con la finalidad de poder mostrar registros de informacion en este caso de nuevos empleados almacenados en LocalStorage
 
